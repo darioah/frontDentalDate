@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+ 
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Bienvenidos | Dental Date</title>
+
+            <link rel="stylesheet" href="/static/formOdo.css">
+            <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+            
+
+
+        </head>
+        <body>
+
+
+            <div class="container">  
+                <form id="contact" th:action="@{/admin/registroOdo}" method="post">
+                  <h3>Registro</h3>
+                  <h4>Registrar nuevo Odontologo o Empleado</h4>
+                  <fieldset>
+                    <input placeholder="Ingrese nombre" name="nombre" type="text" tabindex="1" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Ingrese apellido" type="text" name="apellido" tabindex="2" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Ingrese dni" type="text" name="Dni" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Ingrese Email" type="email" name="email" tabindex="4" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Ingrese contraseña" type="password" name="contraseña" tabindex="5" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Ingrese especialidad" type="text" name="contraseña" tabindex="6" required>
+                  </fieldset>
+                  <fieldset>
+                    <input placeholder="Ingrese matricula " type="text" name="contraseña" tabindex="7" required>
+                  </fieldset>
+                  <fieldset>
+                      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Guardar <a    > </a>  </button>
+                  </fieldset>
+                </form>
+               
+        </body>
+    </html>
